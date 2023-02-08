@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		alert(cold_count);
         } //this function adds the number of cold symptoms everytime the correct button is pushed 
 	
-	function results(){
+	function getResults(){
 		var coldPercent = (cold_count / 4 * 100;
 		var allergyPercent = (allergy_count / 4) * 100;
 		var resultText = document.getElementById("results");
@@ -158,7 +158,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-		<a class="w3-btn w3-black" onclick="results();"
+		<a class="w3-btn w3-black" onclick="results();">Click to view results</a>
 		<p id= "results"></p>
 		
 	</div>
