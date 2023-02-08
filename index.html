@@ -148,11 +148,23 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
+
 	</div>
 	
     	<div id="content" class="w3-container">
 		<button id="resultsBtn">Results</button>
-		
+		<script>
+  			const allergyAdd = allergy_count;
+ 			const coldAdd = cold_count;
+			const total = 4;
+
+  			document.getElementById("results-button").addEventListener("click", function() {
+  			const allergyPercent = (allergyCount / total) * 100;
+    			const coldPercent = (coldCount / total) * 100;
+    			console.log(`Allergy Count Percentage: ${allergyPercent}%`);
+   			console.log(`Cold Count Percentage: ${coldPercent}%`);
+		  });
+		</script>
     	
 	</div>
 </div>
