@@ -51,12 +51,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         } //this function adds the number of cold symptoms everytime the correct button is pushed 
 	
 	function getResults(){
-		var coldPercent = (cold_count / 4 * 100;
+		var coldPercent = (cold_count / 4) * 100;
 		var allergyPercent = (allergy_count / 4) * 100;
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
 		
-	{ //this function calculates the percent chance of cold or allergies by turning the cold_count and allergy_count into a percent
+	{ //this function calculates the percent chance of cold or allergies by turning the cold_count and allergy_count into a percent then displays it on the page as probabilities
 	
 
 
