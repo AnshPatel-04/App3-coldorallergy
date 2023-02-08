@@ -38,6 +38,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
+	const total = 4;
+	
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -49,6 +51,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
 		alert(cold_count);
         }
+	
+	function getResults(){
+		(cold_count / total) * 100;
+		(allergy_count / total) * 100;
+		
+	{
 	
 
 
@@ -152,19 +160,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-		<button id="resultsBtn">Results</button>
-		<script>
-  			const allergyAdd = allergy_count;
- 			const coldAdd = cold_count;
-			const total = 4;
-
-  			document.getElementById("results-button").addEventListener("click", function() {
-  			const allergyPercent = (allergy_Count / total) * 100;
-    			const coldPercent = (cold_Count / total) * 100;
-    			console.log(`Allergy Count Percentage: ${allergyPercent}%`);
-   			console.log(`Cold Count Percentage: ${coldPercent}%`);
-		  });
-		</script>
+		<a href="#five" onclick="getResults;" class="w3-btn w3-black">Results</a>
+		
     	
 	</div>
 </div>
